@@ -25,5 +25,16 @@
         </view>  
         </view>
     </view>
-
+      <!-- 购物车底部 -->
+      <view class='btns'>
+          <view class='bug_img'>
+              <image src='/images/footer-icon-03.png'></image>
+          </view>
+          <view class='jiaru'>
+            加入购物车
+          </view>
+          <view class='buy'>
+            立即购买
+          </view>
+      </view>
 </view>

@@ -26,6 +26,7 @@
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid #dadada;
+    background: #fff;
 }
 .weui_cell_hd{
   display: inline-block;
@@ -63,7 +64,8 @@
   right: 15px;
   width: 15px;
   height: 15px;
-  background-image: url(../../images/icon-arrowdown.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+}
+.with_arrow image{
+ width: 30rpx;
+  height: 30rpx; 
 }
