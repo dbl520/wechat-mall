@@ -1,3 +1,4 @@
+
 <view class="container">
   <view class="nav_left">
     <block wx:for="{{navLeftItems}}">
@@ -27,6 +28,6 @@
         </view>
       </block>
     </view>
-    <view wx:else>暂无数据</view>
+    <view wx:else class='zanwu'>暂无数据</view>
   </view>
 </view>

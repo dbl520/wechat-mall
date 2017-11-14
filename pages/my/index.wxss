@@ -7,7 +7,7 @@
   flex-direction: column;
   padding: 50rpx 0;
   align-items: center;
-  background: #f9f027;
+  background: skyblue;
 }
 .userinfo-avatar {
   width: 128rpx;

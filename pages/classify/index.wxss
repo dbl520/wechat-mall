@@ -1,3 +1,4 @@
+
 page{
   background: #f5f5f5;
 }
@@ -53,4 +54,9 @@ page{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.zanwu{
+  font-size: 32rpx;
+  color: #353535;
+  text-align: center;
 }

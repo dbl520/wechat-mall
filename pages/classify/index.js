@@ -1,4 +1,5 @@
 var app = getApp()
+
 Page({
     data: {
         navLeftItems: [],
@@ -22,6 +23,7 @@ Page({
                     navLeftItems: res.data,
                     navRightItems: res.data
                 })
+               
             }
         })
     },

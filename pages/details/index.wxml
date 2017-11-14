@@ -1,5 +1,5 @@
+ <import src="../../wxParse/wxParse.wxml"/>
 <view class="container">
-    
     <view>
         <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
                 autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -12,12 +12,18 @@
     </view>
 
     <view class="shopping_container">
-        <view class="title">{{shopppingDetails.title}}</view>
-        <view class="reason">{{shopppingDetails.reason}}</view>
+         <view class="title">{{shopppingDetails.title}}</view>
+         <view class="reason">{{shopppingDetails.reason}}</view>
+         <view class="price">￥{{shopppingDetails.ourprice}}</view>
     </view>
 
     <view>
-        <view></view>
+        <view>
+        <!-- 富文本详情 -->
+        <view class="wxParse">
+           <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+        </view>  
+        </view>
     </view>
 
 </view>

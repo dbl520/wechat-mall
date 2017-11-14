@@ -1,4 +1,5 @@
 var app = getApp()
+var WxParse = require('../../wxParse/wxParse.js');
 Page({
     data: {
         indicatorDots: true,
@@ -6,6 +7,7 @@ Page({
         autoplay: true,
         interval: 3000,
         duration: 1200,
+        shopppingDetails:''
     },
 
     onLoad: function(options) {
@@ -21,9 +23,9 @@ Page({
                 'Accept': 'application/json'
             },
             success: function(res) {
-                //console.log(res.data.data);
+                console.log(res.data.data);
                 that.data.shopppingDetails = res.data.data;
-
+                // console.log(shopppingDetails.id)
                 var goodsPicsInfo = [];
                 var goodsPicsObj = {};
                 var goodspic = res.data.data.goodspics;
@@ -35,8 +37,12 @@ Page({
                     });
                 }
                 that.setData({
+                  shopppingDetails: res.data.data,
                     goodsPicsInfo: goodsPicsInfo
                 })
+                // 拿到富文本数据
+                var article = res.data.data.detailinfo;
+                WxParse.wxParse('article', 'html', article, that, 5);
             }
         })
 
